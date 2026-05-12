@@ -1,0 +1,33 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="zh-TW">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>歡迎來到環球新聞</h1>
+			<p>
+				掌握全球脈動，深度解析國際政治、財經科技、氣候環境與社會議題。環球新聞致力於提供準確、即時、有深度的新聞報導，讓您在資訊爆炸的時代，快速找到真正重要的事。
+			</p>
+			<h2>本週焦點</h2>
+			<ul>
+				<li>🌍 全球氣候峰會達成歷史性減碳協議</li>
+				<li>💻 台積電宣布日本熊本三廠計畫，投資逾兆日圓</li>
+				<li>🏥 WHO宣布H5N9禽流感進入國際公衛緊急狀態</li>
+				<li>🤖 麥肯錫報告：AI將在2030年前取代逾3億個工作</li>
+			</ul>
+			<p>
+				前往 <a href="/blog">新聞列表</a> 閱讀所有報導，或至 <a href="/about">關於我們</a> 了解環球新聞的編輯理念。
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
